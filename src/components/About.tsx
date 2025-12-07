@@ -2,7 +2,12 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { GraduationCap, BookOpen, Calendar, Award } from "lucide-react";
-import { aboutText, education, courses, personalInfo } from "@/data/portfolioData";
+import {
+  aboutText,
+  education,
+  courses,
+  personalInfo,
+} from "@/data/portfolioData";
 
 const About = () => {
   const ref = useRef(null);
@@ -53,12 +58,18 @@ const About = () => {
 
                 <div className="mt-8 grid grid-cols-2 gap-4">
                   <div className="p-4 bg-background/50 rounded-lg">
-                    <span className="text-3xl font-bold gradient-text">3+</span>
-                    <p className="text-muted-foreground text-sm mt-1">Projects Completed</p>
+                    <span className="text-3xl font-bold gradient-text">
+                      200+
+                    </span>
+                    <p className="text-muted-foreground text-sm mt-1">
+                      Problems solved on leetcode
+                    </p>
                   </div>
                   <div className="p-4 bg-background/50 rounded-lg">
                     <span className="text-3xl font-bold gradient-text">1+</span>
-                    <p className="text-muted-foreground text-sm mt-1">Years Experience</p>
+                    <p className="text-muted-foreground text-sm mt-1">
+                      Years Experience
+                    </p>
                   </div>
                 </div>
               </div>
@@ -76,7 +87,9 @@ const About = () => {
                     <h4 className="font-heading text-lg font-semibold text-foreground">
                       Education
                     </h4>
-                    <p className="text-primary font-medium mt-1">{education.degree}</p>
+                    <p className="text-primary font-medium mt-1">
+                      {education.degree}
+                    </p>
                     <p className="text-muted-foreground text-sm mt-1">
                       {education.university}
                     </p>
@@ -104,7 +117,9 @@ const About = () => {
                     <h4 className="font-heading text-lg font-semibold text-foreground">
                       Certifications
                     </h4>
-                    <p className="text-primary font-medium mt-1">{courses.name}</p>
+                    <p className="text-primary font-medium mt-1">
+                      {courses.name}
+                    </p>
                     <p className="text-muted-foreground text-sm mt-1">
                       {courses.institution}
                     </p>
@@ -123,13 +138,16 @@ const About = () => {
                 </h4>
                 <div className="space-y-3 text-sm">
                   <p className="text-muted-foreground">
-                    <span className="text-primary">Email:</span> {personalInfo.email}
+                    <span className="text-primary">Email:</span>{" "}
+                    {personalInfo.email}
                   </p>
                   <p className="text-muted-foreground">
-                    <span className="text-primary">Phone:</span> {personalInfo.phone}
+                    <span className="text-primary">Phone:</span>{" "}
+                    {personalInfo.phone}
                   </p>
                   <p className="text-muted-foreground">
-                    <span className="text-primary">Location:</span> {personalInfo.address}
+                    <span className="text-primary">Location:</span>{" "}
+                    {personalInfo.address}
                   </p>
                 </div>
               </div>
