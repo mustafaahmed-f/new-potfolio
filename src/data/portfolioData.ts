@@ -41,15 +41,6 @@ export const experienceData = [
   },
   {
     id: 2,
-    companyName: "LevelUp ESG®",
-    role: "Frontend Developer",
-    period: "SEP 2024",
-    location: "London, England",
-    typeOfWork: "Internship - Remotely",
-    details: [],
-  },
-  {
-    id: 3,
     companyName: "VODO",
     role: "Frontend Developer",
     period: "Jun 2024 ~ Aug 2024",
